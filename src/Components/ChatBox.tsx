@@ -32,7 +32,7 @@ function ChatBox() {
 
       case "/help":
         setMessages((prev) => [
-          `System > Available commands:\n/name [new name]\n/clear\n/help\n/hi\n/hello\n/about\n/favorite\n/stack\n/portfolio\n/links\n/fuckyou\n/explode`,
+          `System > Available commands:\n/name [new name]\n/clear\n/help\n/hi\n/hello\n/about\n/favorite\n/stack\n/portfolio\n/links\n/fuckyou\n`,
           ...prev,
         ]);
         break;
@@ -79,10 +79,6 @@ function ChatBox() {
 
       case "/fuckyou":
         setMessages((prev) => [`System > Fuck you too 😠🖕`, ...prev]);
-        break;
-
-      case "/explode":
-        window.location.href = "/crash?reason=easteregg";
         break;
 
       default:
